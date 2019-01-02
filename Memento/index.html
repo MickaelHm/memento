@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Memento HTML/CSS</title>
+</head>
+<h1>Memento HTML & CSS</h1>
+<body>
+    <h2>HTML</h2>
+    <p>
+        Pour afficher du code sur une page HTML on remplace le premier chevron par <strong>"&lt ;" sans espace et le second par "&gt ;" </strong>
+        <br />
+        Les paragraphes se trouvent dans des balises <strong>&lt;p&gt; &lt;/p&gt;</strong><br />
+        Dans la balise <strong>&lt;Title&gt;</strong> on écrit le titre qui figurera au niveau de l'onglet du navigateur <br />
+        Chaque Titre affiché sur la page se trouvera entre des balises <strong>h1/h2/h3... suivant son importance</strong>, h1 étant le plus important. Cela influe sur sa taille. <br />
+        Afin de revenir à la ligne on terminera sa ligne par une balise <strong>"br /".</strong><br />
+        Pour créer des <strong>listes</strong>, on peut utiliser les balises <strong>"ul" pour une liste non numérotée et "ol" pour une numérotée</strong>. Elle devront être suivit par des balises <strong>"li" "/li"</strong> pour élément de la liste/<br />
+        Des balises pour la mise en page tel que <strong>"b"</strong> pour écrire en gras ou <strong>"i"</strong> pour écrire en italic existe, cette liste est non exhaustive. <br />
+        L'on peut attribuer des couleurs entre autre via une balise <strong>"style"</strong> directement depuis la page HTML <strong>(ou comme on le verra plus tard, s'en passer en utilisant le CSS pour ces applications)</strong>.
+        Il est possible d'affecter qu'un morceau d'une phrase grace a une balise de délimitation <strong>"span" "/span"</strong> comme pour colorer un seul mot dans une phrase par exemple. ex: &lt;span style="color:green;"&gt; litres&lt;/span&gt; <br />
+        Pour insérer une image à partir d'une URL on utilisera la balise <strong>&lt;img src ="URL"/&gt;</strong> <br />
+        Dans l'exemple qui suit, on utilise la balise <strong>"a href"</strong> pour mettre un lien qui s'affiche sur le mot que l'on désire, dans cette le phrase, on cliquera sur "ici" pour ouvrir le lien en question; <br /> &lt;a href="https://www.codecademy.com/fr" &gt;ici&lt;/a&gt; <br />
+        En prenant le même exemple, on peut rajouter une balise <strong>title</strong> qui permettra d'afficher un message au survol du lien: <br />
+        Le site de codeacademy est &lt;a href="https://www.codecademy.com/fr" <strong>title=</strong>"mettre un titre au survol du lien"/&gt;ici&lt;/a/&gt; <br />
+        Pour ajouter des commentaires en HTML la balise à utiliser est celle ci: <strong>&lt;!-- Mon Commentaire --&gt;</strong><br />
+</p>
+    <p></p>
+    <h3>
+        Faire un Tableau
+    </h3>
+    <p>
+        Pour la création d'un tableau on utilisera <strong>table{} intégré dans une balise style, auquel on peut spécifier le type de bordure, comme par exemple "border-collapse: collapse;" qui sert a fondre les lignes du tableau entre elles.</strong><br />
+        Pour ajouter un en-tête à notre tableau on utilise la balise <strong>"caption"</strong>.<br />
+        <strong>Un tableau est structuré sous forme de &lt;thead&gt; , &lt;tbody&gt; , &lt;tfoot&gt; .</strong><br />
+        On assigne une taille de bordure et une couleur de cette manière <strong>"border: 1px solid black;" aux rubriques voulu du tableau, définient comme tel :</strong><br />
+        <ul>
+            <li><strong>"table" pour le contour du tableau</strong></li>
+            <li><strong>"th" pour la première ligne du tableau</strong></li>
+            <li><strong>"td" pour toutes les cases sous la première ligne</strong></li>
+        </ul>
+
+    </p>
+
+</body>
+</html>
