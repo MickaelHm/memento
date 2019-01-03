@@ -8,7 +8,10 @@
 <body>
     <h2>HTML</h2>
     <p>
-        Pour afficher du code sur une page HTML on remplace le premier chevron par <strong>"&lt ;" sans espace et le second par "&gt ;" </strong>
+        Il faut vérifier que la balise <strong>&lt;meta charset="UTF-8" /&gt;</strong> est bien présente entre les balises head afin de pouvoir afficher correctement les accents présent dans la langue française.<br />
+        Entre les balises <strong>head</strong> ne se trouve que des éléments non affiché sur la page web.<br />
+        Entre les balises <strong>body</strong> se trouve les éléments affiché sur la page web. <br />
+        Pour afficher du code sur une page HTML on remplace le premier chevron par <strong>"& lt ;" sans espace et le second par "& gt ;" </strong>
         <br />
         Les paragraphes se trouvent dans des balises <strong>&lt;p&gt; &lt;/p&gt;</strong><br />
         Dans la balise <strong>&lt;Title&gt;</strong> on écrit le titre qui figurera au niveau de l'onglet du navigateur <br />
@@ -23,11 +26,9 @@
         En prenant le même exemple, on peut rajouter une balise <strong>title</strong> qui permettra d'afficher un message au survol du lien: <br />
         Le site de codeacademy est &lt;a href="https://www.codecademy.com/fr" <strong>title=</strong>"mettre un titre au survol du lien"/&gt;ici&lt;/a/&gt; <br />
         Pour ajouter des commentaires en HTML la balise à utiliser est celle ci: <strong>&lt;!-- Mon Commentaire --&gt;</strong><br />
-</p>
+    </p>
     <p></p>
-    <h3>
-        Faire un Tableau
-    </h3>
+    <h3>Tableau</h3>
     <p>
         Pour la création d'un tableau on utilisera <strong>table{} intégré dans une balise style, auquel on peut spécifier le type de bordure, comme par exemple "border-collapse: collapse;" qui sert a fondre les lignes du tableau entre elles.</strong><br />
         Pour ajouter un en-tête à notre tableau on utilise la balise <strong>"caption"</strong>.<br />
@@ -38,7 +39,19 @@
             <li><strong>"th" pour la première ligne du tableau</strong></li>
             <li><strong>"td" pour toutes les cases sous la première ligne</strong></li>
         </ul>
-
+        Dans cet exemple <strong>colspan="2"</strong> inséré dans &lt;td&gt; indique que l'on veut que cette case fasse la taille des "2" premières colonnes:<br />
+        <strong>&lt;td colspan="2"&gt;</strong> &lt;center&gt;Solde &lt;/center&gt;&lt;/td&gt;<br />
+        Les balises center servent naturellement à centrer le texte dans la case.
+    </p>
+    <h3>Formulaire</h3>
+    <p>
+        Pour créer un formulaire nous allons écrire notre code dans la balise <strong>&lt;form&gt;</strong>, elle sert a collecter des données entrées par l'utilisateur.<br />
+        L'élément <strong>&lt;fieldset&gt;</strong> permet de regrouper une partie d'un formulaire HTML et d'associer <strong>une légende (&lt;legend&gt;)</strong> décrivant ce groupe. Exemple:<br />
+        <pre><code>
+    <strong>&lt;fieldset class="id"&gt;<br>
+        &lt;legend class="id"&gt;Votre identité&lt;/legend&gt;</strong><br />
+        On peut constater la présence de l'attribut <strong>class=</strong> qui permet d'attribuer un nom à un ensemble de code afin de l'identifier et pouvoir modifier ce block pars le bias du CSS.<br />
+</code></pre>
     </p>
 
 </body>
